@@ -23,18 +23,18 @@ resource "aws_vpc" "vpc" {
   }
 }
 
-# huawei
-provider "huaweicloud" {
-    region = var.huaweicloud_region
-}
+// # huawei
+// provider "huaweicloud" {
+//     region = var.huaweicloud_region
+// }
 
-resource "huaweicloud_vpc_v1" "vpc" {
-  name = var.huaweicloud_vpc_name
-  cidr = var.huaweicloud_vpc_cidr
-  tags = {
-    Description = "华为云测试"
-  }
-}
+// resource "huaweicloud_vpc_v1" "vpc" {
+//   name = var.huaweicloud_vpc_name
+//   cidr = var.huaweicloud_vpc_cidr
+//   tags = {
+//     Description = "华为云测试"
+//   }
+// }
 
 
 # tencent
