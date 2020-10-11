@@ -37,17 +37,17 @@ resource "huaweicloud_vpc_v1" "vpc" {
 }
 
 
-# tencent
-provider "tencentcloud" {
-    region = var.tencentcloud_region
-}
+# # tencent
+# provider "tencentcloud" {
+#     region = var.tencentcloud_region
+# }
 
-resource "tencentcloud_vpc" "vpc" {
-  name         = var.tencentcloud_vpc_name
-  cidr_block   = var.tencentcloud_vpc_cidr
+# resource "tencentcloud_vpc" "vpc" {
+#   name         = var.tencentcloud_vpc_name
+#   cidr_block   = var.tencentcloud_vpc_cidr
 
-  tags = {
-    Description = "腾讯云测试",
-    Name = var.aws_vpc_name
-  }
-}
+#   tags = {
+#     Description = "腾讯云测试",
+#     Name = var.aws_vpc_name
+#   }
+# }
